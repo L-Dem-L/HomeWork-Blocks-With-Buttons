@@ -1,0 +1,53 @@
+
+@import "../variables/variables.scss";
+
+.block-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.parent-block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    background-color: $parrent-block-color ;
+    border-radius: 15px;
+    border: 1px solid $parrent-block-border-color;
+
+    .inner-block-btn {
+        position: absolute;
+        bottom: 5%;
+        background-color: $inner-block-btn-color;
+        border-color: $inner-block-btn-color;
+        width: 80%;
+        height: 35px;
+        border-radius: 20px;
+    }
+    
+    .inner-block-btn:hover {
+        background-color: $inner-block-btn-hover;
+        border-color: $inner-block-btn-hover;
+        transition: 1.5s;
+    }
+    
+    .inner-block-btn-text {
+        position: relative;
+        bottom: 33%;
+    }
+    
+    .inner-block-btn-text:hover {
+        color: $inner-block-btn-color;
+        transition: 1.5s;
+    }
+    
+    .parent-block-info {
+        position: absolute;
+        color: $parent-block-info-color;
+        top: 25%;
+    }
+}

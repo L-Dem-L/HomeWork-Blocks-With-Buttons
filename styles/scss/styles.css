@@ -1,0 +1,45 @@
+.block-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.parent-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  background-color: #101010;
+  border-radius: 15px;
+  border: 1px solid #333333;
+}
+.parent-block .inner-block-btn {
+  position: absolute;
+  bottom: 5%;
+  background-color: aqua;
+  border-color: aqua;
+  width: 80%;
+  height: 35px;
+  border-radius: 20px;
+}
+.parent-block .inner-block-btn:hover {
+  background-color: blue;
+  border-color: blue;
+  transition: 1.5s;
+}
+.parent-block .inner-block-btn-text {
+  position: relative;
+  bottom: 33%;
+}
+.parent-block .inner-block-btn-text:hover {
+  color: aqua;
+  transition: 1.5s;
+}
+.parent-block .parent-block-info {
+  position: absolute;
+  color: aliceblue;
+  top: 25%;
+}/*# sourceMappingURL=styles.css.map */
